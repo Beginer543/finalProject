@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.CommonMethods;
 
-public class EmployeeSearchPage extends CommonMethods {
+public class MembershipPage extends CommonMethods {
 
     @FindBy(id = "empsearch_id")
     public WebElement empIdTextBox;
@@ -43,7 +43,7 @@ public class EmployeeSearchPage extends CommonMethods {
     @FindBy(id = "btnSaveMembership")
     public WebElement btnSaveMember;
 
-    public EmployeeSearchPage() {
+    public MembershipPage() {
         PageFactory.initElements(driver, this);
     }
 }
